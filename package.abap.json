@@ -1,7 +1,7 @@
 {
   "name": "diff3",
   "version": "1.0.0",
-  "description": "",
+  "description": "Highlight the difference two or three string-tables (diff3)",
   "type": "module",
   "keywords": [
     "abap",
