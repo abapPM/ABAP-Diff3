@@ -10,6 +10,8 @@ Library to highlight the content difference between two or three string-tables (
 
 NO WARRANTIES, [MIT License](LICENSE)
 
+[ABAP-Diff3-Tests](https://github.com/abapPM/ABAP-Diff3-Tests) contains various test cases
+
 ## Diff3 Utils
 
 This is a library to find differences between two string tables, generate and apply patches, and perform 3-way merging between an original and two changed string tables. It contains similar functionality to the [GNU Diffutils](https://www.gnu.org/software/diffutils/manual/diffutils.html) tools.
