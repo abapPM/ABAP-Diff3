@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@abaplint/cli": "^2.113.119"
+  },
+  "scripts": {
+    "test": "abaplint"
+  }
+}

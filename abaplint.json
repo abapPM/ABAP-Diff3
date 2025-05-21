@@ -154,6 +154,7 @@
 			"exclude": [],
 			"severity": "Error",
 			"skip": [],
+      "skipTestclasses": true,
 			"skipSharedMemory": true
 		},
 		"cyclomatic_complexity": {
@@ -167,6 +168,7 @@
 			"deleteTextpool": true,
 			"dynamicSQL": true,
 			"exclude": [],
+      "insertTextpool": true,
 			"exportDynpro": true,
 			"execSQL": true,
 			"generateDynpro": true,
@@ -216,6 +218,7 @@
 			"do": true,
 			"exclude": [],
 			"if": true,
+      "loopAllowIfSubrc": false,
 			"loop": true,
 			"select": true,
 			"severity": "Error",
@@ -399,10 +402,7 @@
 			"exclude": [],
 			"severity": "Error"
 		},
-		"message_exists": {
-			"exclude": [],
-			"severity": "Error"
-		},
+		"message_exists": true,
 		"method_implemented_twice": {
 			"exclude": [],
 			"severity": "Error"
@@ -435,10 +435,7 @@
 			"exclude": [],
 			"severity": "Error"
 		},
-		"msag_consistency": {
-			"exclude": [],
-			"severity": "Error"
-		},
+		"msag_consistency": true,
 		"names_no_dash": {
 			"exclude": [],
 			"severity": "Error"
@@ -485,35 +482,7 @@
 			"ttyp": "^Z",
 			"xslt": "^Z"
 		},
-		"obsolete_statement": {
-			"add": true,
-			"callTransformation": true,
-			"communication": true,
-			"compute": true,
-			"divide": true,
-			"exclude": [],
-			"exitFromSQL": true,
-			"fieldSymbolStructure": true,
-			"freeMemory": true,
-			"load": true,
-			"move": true,
-			"multiply": true,
-			"occurences": true,
-			"occurs": true,
-			"pack": true,
-			"parameter": true,
-			"ranges": true,
-			"refresh": true,
-			"regex": true,
-			"requested": true,
-			"selectWithoutInto": true,
-			"setExtended": true,
-			"severity": "Error",
-			"sortByFS": true,
-			"subtract": true,
-			"typePools": true,
-			"withHeaderLine": true
-		},
+		"obsolete_statement": true,
 		"omit_parameter_name": {
 			"exclude": [],
 			"severity": "Error"
@@ -597,15 +566,7 @@
 			"severity": "Error",
 			"starOkayIfFewColumns": 10
 		},
-		"selection_screen_naming": {
-			"exclude": [],
-			"ignoreNames": [],
-			"ignorePatterns": [],
-			"parameter": "^P_.+$",
-			"patternKind": "required",
-			"selectOption": "^S_.+$",
-			"severity": "Error"
-		},
+		"selection_screen_naming": true,
 		"sequential_blank": {
 			"exclude": [],
 			"lines": 4,
@@ -664,10 +625,7 @@
 			"pattern": "^TY_.+$",
 			"severity": "Error"
 		},
-		"uncaught_exception": {
-			"exclude": [],
-			"severity": "Error"
-		},
+		"uncaught_exception": true,
 		"unknown_types": {
 			"exclude": [],
 			"severity": "Error"
@@ -689,11 +647,7 @@
 			"severity": "Error",
 			"skipNames": []
 		},
-		"unused_variables": {
-			"exclude": [],
-			"severity": "Error",
-			"skipNames": []
-		},
+		"unused_variables": true,
 		"use_bool_expression": {
 			"exclude": [],
 			"severity": "Error"
