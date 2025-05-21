@@ -3,6 +3,7 @@
     "@abaplint/cli": "^2.113.119"
   },
   "scripts": {
+    "downport": "rm -rf downport && mkdir downport && cp -r src/* downport/ && abaplint abaplint-downport.jsonc",
     "test": "abaplint"
   }
 }
