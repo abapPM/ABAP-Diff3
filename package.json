@@ -7,6 +7,6 @@
   "scripts": {
     "transpile": "rm -rf output && abap_transpile abap_transpile.jsonc",
     "downport": "rm -rf downport && mkdir downport && cp -r src/* downport/ && abaplint abaplint-downport.jsonc --fix",
-    "test": "abaplint"
+    "test": "abaplint && npm run downport && npm run transpile && echo RUNNING && node output/index.mjs"
   }
 }
