@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@abaplint/runtime": "^2.10.49",
+    "@abaplint/transpiler-cli": "^2.10.49",
+    "@abaplint/cli": "^2.113.119"
+  },
+  "scripts": {
+    "transpile": "rm -rf output && abap_transpile abap_transpile.jsonc",
+    "downport": "rm -rf downport && mkdir downport && cp -r src/* downport/ && abaplint abaplint-downport.jsonc --fix",
+    "test": "abaplint && npm run downport && npm run transpile && echo RUNNING && node output/index.mjs"
+  }
+}
