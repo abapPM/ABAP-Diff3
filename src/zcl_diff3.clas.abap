@@ -698,9 +698,13 @@ CLASS zcl_diff3 IMPLEMENTATION.
         DATA(lv_s) = lv_r.
         DO.
           IF lv_s < lines( lt_candidates ).
-            IF lt_candidates[ key = lv_s ]-buffer2index < lv_j AND
-              ( lv_s = lines( lt_candidates ) - 1 OR lt_candidates[ key = lv_s + 1 ]-buffer2index > lv_j ).
-              EXIT.
+            IF lt_candidates[ key = lv_s ]-buffer2index < lv_j.
+              IF lv_s = lines( lt_candidates ) - 1.
+                EXIT.
+              ENDIF.
+              IF lt_candidates[ key = lv_s + 1 ]-buffer2index > lv_j.
+                EXIT.
+              ENDIF.
             ENDIF.
           ELSE.
             EXIT.

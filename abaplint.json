@@ -441,7 +441,7 @@
 			"severity": "Error"
 		},
 		"nesting": {
-			"depth": 5,
+			"depth": 8,
 			"exclude": [],
 			"severity": "Error"
 		},
