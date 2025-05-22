@@ -365,10 +365,8 @@ CLASS ZCL_DIFF3 IMPLEMENTATION.
         IF ls_hunk-ab_length > 0.
           IF ls_hunk-ab = 'a'.
             ASSIGN it_a TO FIELD-SYMBOL(<lt_buffer>).
-            ASSERT sy-subrc = 0.
           ELSE.
             ASSIGN it_b TO <lt_buffer>.
-            ASSERT sy-subrc = 0.
           ENDIF.
           CLEAR ls_result.
           ls_result-stable = abap_true.
@@ -411,10 +409,8 @@ CLASS ZCL_DIFF3 IMPLEMENTATION.
 
           IF ls_hunk-ab = 'a'.
             ASSIGN ls_bounds-a TO FIELD-SYMBOL(<ls_b>).
-            ASSERT sy-subrc = 0.
           ELSE.
             ASSIGN ls_bounds-b TO <ls_b>.
-            ASSERT sy-subrc = 0.
           ENDIF.
 
           DATA(ls_b) = VALUE ty_bound(
