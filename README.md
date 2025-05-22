@@ -20,6 +20,8 @@ This is a library to find differences between two string tables, generate and ap
 
 SAP Basis 7.4 or higher
 
+A downport to SAP Basis 7.02 part of abapGit and available separately [here](https://github.com/abapGit/diff3_mirror).
+
 ## Installation
 
 You can install ABAP Diff3 using [abapGit](https://github.com/abapGit/abapGit) either creating a new online repository for `https://github.com/abapPM/ABAP-Diff3` or downloading the repository [ZIP file](https://github.com/abapPM/ABAP-Diff3/archive/main.zip) and creating a new offline repository.
