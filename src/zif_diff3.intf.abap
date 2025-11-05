@@ -13,6 +13,8 @@ INTERFACE zif_diff3 PUBLIC.
 
   TYPES ty_number TYPE i.
 
+  TYPES ty_numbers TYPE STANDARD TABLE OF ty_number WITH EMPTY KEY.
+
   TYPES:
     BEGIN OF ty_number_number,
       key TYPE ty_number,
@@ -25,8 +27,7 @@ INTERFACE zif_diff3 PUBLIC.
       buffer1index TYPE ty_number,
       buffer2index TYPE ty_number,
       chain        TYPE i, " ref to ilcsresult-key
-    END OF ty_lcs_result.
-  TYPES:
+    END OF ty_lcs_result,
     ty_lcs_result_t TYPE SORTED TABLE OF ty_lcs_result WITH UNIQUE KEY key.
 
   TYPES:
@@ -36,8 +37,7 @@ INTERFACE zif_diff3 PUBLIC.
         buffer1 TYPE string_table,
         buffer2 TYPE string_table,
       END OF diff,
-    END OF ty_comm_result.
-  TYPES:
+    END OF ty_comm_result,
     ty_comm_result_t TYPE STANDARD TABLE OF ty_comm_result WITH DEFAULT KEY.
 
   TYPES:
@@ -46,8 +46,7 @@ INTERFACE zif_diff3 PUBLIC.
       buffer1content TYPE string_table,
       buffer2        TYPE ty_number_number,
       buffer2content TYPE string_table,
-    END OF ty_diff_indices_result.
-  TYPES:
+    END OF ty_diff_indices_result,
     ty_diff_indices_result_t TYPE STANDARD TABLE OF ty_diff_indices_result WITH DEFAULT KEY.
 
   TYPES:
@@ -61,8 +60,7 @@ INTERFACE zif_diff3 PUBLIC.
     BEGIN OF ty_patch_result,
       buffer1 TYPE ty_chunk,
       buffer2 TYPE ty_chunk,
-    END OF ty_patch_result.
-  TYPES:
+    END OF ty_patch_result,
     ty_patch_result_t TYPE STANDARD TABLE OF ty_patch_result WITH DEFAULT KEY.
 
   TYPES:
@@ -90,8 +88,7 @@ INTERFACE zif_diff3 PUBLIC.
       stable          TYPE abap_bool,
       stable_region   TYPE ty_stable_region,
       unstable_region TYPE ty_unstable_region,
-    END OF ty_region.
-  TYPES:
+    END OF ty_region,
     ty_region_t TYPE STANDARD TABLE OF ty_region WITH DEFAULT KEY.
 
   TYPES:
@@ -105,8 +102,7 @@ INTERFACE zif_diff3 PUBLIC.
         b       TYPE string_table,
         b_index TYPE ty_number,
       END OF conflict,
-    END OF ty_merge_region.
-  TYPES:
+    END OF ty_merge_region,
     ty_merge_region_t TYPE STANDARD TABLE OF ty_merge_region WITH DEFAULT KEY.
 
   TYPES:
