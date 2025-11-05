@@ -6,18 +6,16 @@ CLASS zcl_diff3 DEFINITION
 ************************************************************************
 * ABAP Diff3
 *
-* https://github.com/Marc-Bernard-Tools/ABAP-Diff3
-*
 * This is a port of JavaScript (https://github.com/bhousel/node-diff3, MIT license)
 * https://github.com/bhousel/node-diff3/blob/main/index.mjs as of 2021-09-24
 *
-* Copyright 2022 Marc Bernard <https://marcbernardtools.com/>
+* Copyright 2024 apm.to Inc. <https://apm.to>
 * SPDX-License-Identifier: MIT
 ************************************************************************
 
   PUBLIC SECTION.
 
-    CONSTANTS c_version TYPE string VALUE '1.1.0' ##NEEDED.
+    CONSTANTS c_version TYPE string VALUE '1.1.1' ##NEEDED.
 
     INTERFACES zif_diff3.
 
