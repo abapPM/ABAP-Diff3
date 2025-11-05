@@ -4,19 +4,14 @@ INTERFACE zif_diff3 PUBLIC.
 ************************************************************************
 * ABAP Diff3 Interface
 *
-* https://github.com/Marc-Bernard-Tools/ABAP-Diff3
-*
 * This is a port of JavaScript (https://github.com/bhousel/node-diff3, MIT license)
 * https://github.com/bhousel/node-diff3/blob/main/index.d.ts as of 2021-05-04
 *
-* Copyright 2022 Marc Bernard <https://marcbernardtools.com/>
+* Copyright 2024 apm.to Inc. <https://apm.to>
 * SPDX-License-Identifier: MIT
 ************************************************************************
 
   TYPES ty_number TYPE i.
-
-  TYPES:
-    ty_numbers TYPE STANDARD TABLE OF ty_number WITH EMPTY KEY.
 
   TYPES:
     BEGIN OF ty_number_number,
