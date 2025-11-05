@@ -1,6 +1,6 @@
 {
   "name": "diff3",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Highlight the difference two or three string-tables (diff3)",
   "type": "module",
   "keywords": [
